@@ -35,7 +35,7 @@ function App() {
 
   useEffect(() => {
     const getSpacecrafts = () => {
-      fetch('http://localhost:8080/api/v1/spacecraft')
+      fetch('https://afternoon-hamlet-97647.herokuapp.com/api/v1/spacecraft')
         .then(res => res.json())
         .then(res => {
           setSpacecrafts(res);
