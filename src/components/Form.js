@@ -25,7 +25,7 @@ const Form = ({newSpacecraft, setNewSpacecraft}) => {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(newSpacecraft)
     }
-    fetch('http://localhost:8080/api/v1/spacecraft', requestInit)
+    fetch('https://afternoon-hamlet-97647.herokuapp.com/api/v1/spacecraft', requestInit)
         .then(res => res.json())
         .then(res => console.log(res))
 
